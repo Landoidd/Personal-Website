@@ -21,3 +21,6 @@ To run this website locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Landoidd/Personal-Website.git
+
+#TODO
+- Continue working on home endpoint and finish card component
