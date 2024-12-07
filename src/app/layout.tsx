@@ -16,19 +16,23 @@ export default function Layout({children}: { children: React.ReactNode }) {
             <header className="p-4 text-white">
                 {/*Navbar*/}
                 <nav className="container mx-auto justify-between">
-                    <ul className="flex justify-around font-sans">
-                        <li>Home</li>
-                        <li>Work Experience</li>
-                        <li>Technical Skills</li>
-                        <li>Projects</li>
-                        <li>Connect</li>
+                    <ul className="flex justify-around font-sans animate-fadeInUp opacity-0">
+                        <li><a href="/" className="cursor-pointer hover:underline">Home</a></li>
+                        <li><a href="/work-experience" className="cursor-pointer hover:underline">Work Experience</a>
+                        </li>
+                        <li><a href="/technical-skills" className="cursor-pointer hover:underline">Technical Skills</a>
+                        </li>
+                        <li><a href="/projects" className="cursor-pointer hover:underline">Projects</a></li>
+                        <li><a href="/connect" className="cursor-pointer hover:underline">Connect</a></li>
                     </ul>
                 </nav>
             </header>
             {/*End of Header*/}
+
             {/* Main */}
             <main>{children}</main>
             {/* End of Main */}
+
         </div>
         {/* Right Sidebar */}
         <div className="w-1/5 bg-gray-400"></div>
