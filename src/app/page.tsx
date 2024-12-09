@@ -1,20 +1,58 @@
 import Image from "next/image";
-import Card from "@/components/Card";
+import {
+    Card,
+    CardContent,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card";
 
 const Home = () => {
-    //Define title and description for card
-    let title = "Title";
-    let description = "Description";
     return (
-        <div className="flex flex-col items-center justify-between p-5 animate-fadeInUp opacity-0">
+        <div className="flex flex-col items-center p-5">
+            {/*Welcome Text*/}
             <div className="m-2">
                 <h1 className="font-bold text-3xl text-white">Hi! Welcome to my Website</h1>
             </div>
             {/*Image*/}
-            <div className="m-2">
-                <Image src="/professional_photo.jpg" alt="Photo of Me" width={300} height={300} />
+            <div className="m-4 w-64 h-64">
+                <Image
+                    src="/professional_photo.jpg"
+                    alt="Photo of Me"
+                    width={300}
+                    height={300}
+                    className="rounded-lg"
+                />
             </div>
-            <Card title={title} description={description}></Card>
+            {/*Cards*/}
+            <div className="flex flex-wrap justify-center mt-24">
+                <div className="m-4 w-64 h-64">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>About Me</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div>
+                                <p>I am a 4th year Computer Science Student at the University of Florida.</p>
+                                <p></p>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+                <div className="m-4 w-64 h-64">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>About Me</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div>
+                                <p>I am a 4th year Computer Science Student at the University of Florida.</p>
+                                <p></p>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+            {/*End of Cards */}
         </div>
     );
 }

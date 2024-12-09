@@ -13,10 +13,10 @@ export default function Layout({children}: { children: React.ReactNode }) {
         {/* Main Content */}
         <div className="w-3/5 bg-gray-500">
             {/*Header*/}
-            <header className="p-4 font-bold text-white bg-gray-600 opacity-90">
+            <header className="p-4 font-bold text-white bg-gray-600 opacity-90 animate-fadeInUp opacity-0">
                 {/*Navbar*/}
                 <nav className="container mx-auto justify-between">
-                    <ul className="flex justify-around font-sans animate-fadeInUp opacity-0">
+                    <ul className="flex justify-around font-sans">
                         <li><a href="/" className="cursor-pointer hover:underline">Home</a></li>
                         <li><a href="/work-experience" className="cursor-pointer hover:underline">Work Experience</a>
                         </li>
@@ -30,7 +30,7 @@ export default function Layout({children}: { children: React.ReactNode }) {
             {/*End of Header*/}
 
             {/* Main */}
-            <main>{children}</main>
+            <main className="animate-fadeInUp opacity-0">{children}</main>
             {/* End of Main */}
 
         </div>
