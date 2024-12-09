@@ -5,41 +5,39 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
+import LocationPin from "../../public/images/locationPin";
 
 const Home = () => {
     return (
+        /* Homepage Container */
         <div className="flex flex-col items-center p-5">
-            {/*Welcome Text*/}
+            {/*Welcome Content with location and socials*/}
             <div className="m-2">
-                <h1 className="font-bold text-3xl text-white">Hi! Welcome to my Website</h1>
-            </div>
-            {/*Image*/}
-            <div className="m-4 w-64 h-64">
-                <Image
-                    src="/professional_photo.jpg"
-                    alt="Photo of Me"
-                    width={300}
-                    height={300}
-                    className="rounded-lg"
-                />
-            </div>
-            {/*Cards*/}
-            <div className="flex flex-wrap justify-center mt-24">
-                <div className="m-4 w-64 h-64">
-                    <Card className="bg-gray-800 rounded-lg text-white">
-                        <CardHeader>
-                            <CardTitle>About Me</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <div>
-                                <p>I am a 4th year Computer Science Student at the University of Florida.</p>
-                                <p></p>
-                            </div>
-                        </CardContent>
-                    </Card>
+                <h1 className="font-bold text-3xl text-center">Landon Zigler</h1>
+                <hr className="border-t-2 border-gray-400 my-4 mx-auto"/>
+                <div className="flex flex-wrap">
+                    <LocationPin className="w-4 h-4"/>
+                    <p className="text-xs"><a href="https://www.google.com/maps/place/Florida/">Florida,
+                        USA</a></p>
+                    <div/>
                 </div>
             </div>
-            {/*End of Cards */}
+            {/*Container with picture and About Me */}
+            <div className="flex flex-wrap m-4">
+                <Card className="w-96 bg-black border-white-100">
+                    <CardHeader className="text-right">About Me</CardHeader>
+                    {/*Image*/}
+                    <div className="m-4 w-64 h-64 min-h-">
+                        <Image
+                            src="/images/professional_photo.jpg"
+                            alt="Photo of Me"
+                            width={200}
+                            height={200}
+                            className="rounded-lg"
+                        />
+                    </div>
+                </Card>
+            </div>
         </div>
     );
 }
