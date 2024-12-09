@@ -68,11 +68,13 @@
 /*
 Add gradient to body and to sidebar
  */
+html {
+  font-family: "Arial", sans-serif;
+}
 
 body {
   background: linear-gradient(to bottom, #1a1a1a, #000000);
   filter: contrast(110%);
-  font-family: "Trebuchet MS", sans-serif;
   color: white;
 }
 
