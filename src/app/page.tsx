@@ -26,20 +26,7 @@ const Home = () => {
             {/*Cards*/}
             <div className="flex flex-wrap justify-center mt-24">
                 <div className="m-4 w-64 h-64">
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>About Me</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <div>
-                                <p>I am a 4th year Computer Science Student at the University of Florida.</p>
-                                <p></p>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </div>
-                <div className="m-4 w-64 h-64">
-                    <Card>
+                    <Card className="bg-gray-800 rounded-lg text-white">
                         <CardHeader>
                             <CardTitle>About Me</CardTitle>
                         </CardHeader>

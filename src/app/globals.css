@@ -64,3 +64,39 @@
     @apply bg-background text-foreground;
   }
 }
+
+/*
+Add gradient to body and to sidebar
+ */
+
+body {
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
+  filter: contrast(110%);
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.sidebar {
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+/*
+Add a backdrop filter, bottom border to our main content
+ */
+.main-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/*
+Add backdrop and box shadow to header
+ */
+header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
