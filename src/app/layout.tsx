@@ -33,6 +33,10 @@ export default function Layout({children}: { children: React.ReactNode }) {
             <main className="m-4 animate-fadeInUp opacity-10">{children}</main>
             {/* End of Main */}
 
+            {/* Footer */}
+            <footer className="text-center text-xs">
+                © 2024 Landon Zigler. All rights reserved.
+            </footer>
         </div>
         {/* Right Sidebar */}
         <div className="w-1/5 sidebar"></div>
