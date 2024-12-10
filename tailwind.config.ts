@@ -11,7 +11,8 @@ export default {
   	extend: {
   		animation: {
   			fadeInUp: 'fadeInUp 1s ease-out forwards',
-			flash: 'flash 2s ease-in-out infinite',
+			flash: 'flash 3.5s ease-in-out infinite',
+			flash2: 'flash 2s ease-in-out infinite',
   		},
   		keyframes: {
   			fadeInUp: {
@@ -25,10 +26,15 @@ export default {
   				}
   			},
 			flash: {
+				'0%': { color: 'transparent' },
+				'50%': { color: '#888888' },
+				'100%': { color: '#FFFFFF' },
+			},
+			flash2: {
 				'0%': { backgroundColor: 'transparent' },
 				'50%': { backgroundColor: '#888888' },
 				'100%': { backgroundColor: '#FFFFFF' },
-			},
+			}
   		},
   		colors: {
   			background: 'hsl(var(--background))',

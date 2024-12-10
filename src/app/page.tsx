@@ -1,6 +1,6 @@
 import Image from "next/image";
 import LocationPin from "../../public/images/locationPin";
-import Chevron from "../../public/images/chevron";
+import ArrowDown from "../../public/images/arrow_down";
 
 const Home = () => {
     const aboutMe = 'I am a 4th year Student at the University of Florida studying computer science.';
@@ -14,7 +14,7 @@ const Home = () => {
                 <hr className="border-t-2 border-zinc-500  my-4 mx-auto"/>
                 <div className="flex gap-2 items-center justify-center">
                     <LocationPin className="w-4 h-4 text-white"/>
-                    <p className="text-sm"><a className="hover:underline"
+                    <p className="text-sm"><a className="hover:underline" target="_blank"
                                               href="https://www.google.com/maps/place/Florida/">Florida,
                         USA</a></p>
                     <div/>
@@ -42,10 +42,11 @@ const Home = () => {
                     </div>
                     {/* Arrow */}
                     <div className="flex flex-col items-center">
-                        <div className="w-3 h-12 bg-gray-400 animate-[flash_2s_ease-in-out_infinite_0s] rounded-sm"></div>
-                        <div className="w-3 h-12 bg-gray-400 animate-[flash_2s_ease-in-out_infinite_0.5s] rounded-sm"></div>
-                        <div className="w-3 h-12 bg-gray-400 animate-[flash_2s_ease-in-out_infinite_1s] rounded-sm"></div>
-                        <Chevron className="w-12 h-12"/>
+                        <div className="w-3 h-12 bg-gray-400 animate-[flash2_2s_ease-in-out_infinite_0s] rounded-sm"></div>
+                        <div className="w-3 h-12 bg-gray-400 animate-[flash2_2s_ease-in-out_infinite_0.5s] rounded-sm"></div>
+                        <div className="w-3 h-12 bg-gray-400 animate-[flash2_2s_ease-in-out_infinite_1s] rounded-sm"></div>
+                        <a href="/work-experience" className="scroll-smooth cursor-pointer">
+                            <ArrowDown className="w-24 h-24 text-gray-400 animate-[flash_2s_ease-in-out_infinite_3.5s]"></ArrowDown></a>
                     </div>
                 </div>
             </div>
