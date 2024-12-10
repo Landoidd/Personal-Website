@@ -10,7 +10,8 @@ export default {
   theme: {
   	extend: {
   		animation: {
-  			fadeInUp: 'fadeInUp 1s ease-out forwards'
+  			fadeInUp: 'fadeInUp 1s ease-out forwards',
+			flash: 'flash 2s ease-in-out infinite',
   		},
   		keyframes: {
   			fadeInUp: {
@@ -22,7 +23,12 @@ export default {
   					opacity: '1',
   					transform: 'translateY(0)'
   				}
-  			}
+  			},
+			flash: {
+				'0%': { backgroundColor: 'transparent' },
+				'50%': { backgroundColor: '#888888' },
+				'100%': { backgroundColor: '#FFFFFF' },
+			},
   		},
   		colors: {
   			background: 'hsl(var(--background))',
