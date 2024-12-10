@@ -34,7 +34,7 @@ export default {
 				'0%': { backgroundColor: 'transparent' },
 				'50%': { backgroundColor: '#888888' },
 				'100%': { backgroundColor: '#FFFFFF' },
-			}
+			},
   		},
   		colors: {
   			background: 'hsl(var(--background))',
