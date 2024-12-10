@@ -25,4 +25,4 @@ To run this website locally, follow these steps:
 #TODO
 - Continue working on home endpoint and finish card component
 
-# © 2024 Landon Zigler. All rights reserved.
+### © 2024 Landon Zigler. All rights reserved.
