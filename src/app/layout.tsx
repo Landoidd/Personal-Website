@@ -6,7 +6,7 @@ Create default Layout of Personal Website
  */
 export default function Layout({children}: { children: React.ReactNode }) {
     return (
-        <html lang="en">
+        <html lang="en" className="scroll-smooth">
         <body className="flex min-h-screen">
         {/* Left Sidebar */}
         <div className="w-1/5 sidebar"></div>
@@ -30,7 +30,7 @@ export default function Layout({children}: { children: React.ReactNode }) {
             {/*End of Header*/}
 
             {/* Main */}
-            <main className="m-4 animate-fadeInUp opacity-10">{children}</main>
+            <main className="m-4 animate-fadeInUp opacity-100">{children}</main>
             {/* End of Main */}
 
             {/* Footer */}
