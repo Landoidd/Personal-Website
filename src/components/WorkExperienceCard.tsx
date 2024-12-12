@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image"
-import React from "react";
+import React, {useState} from "react";
 import LocationPin from "../../public/images/locationPin";
 
 interface WorkExperienceCardProps {
@@ -17,8 +18,15 @@ Define WorkExperienceCard
  */
 const WorkExperienceCard: React.FC<WorkExperienceCardProps> = (
     {companyName, location, logoSrc, altText, title, dates, children}) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleExpand = () => {
+        setIsOpen((prev) => !prev);
+    };
+
+
     return (
-        <div className="w-1/2 m-4 p-4 bg-white rounded-lg">
+        <div className="w-1/2 m-4 p-4 bg-white rounded-lg border-2 border-zinc-500">
             {/* Card Header*/}
             <div className="flex justify-between">
                 <div className="flex flex-wrap flex-col">
@@ -42,7 +50,13 @@ const WorkExperienceCard: React.FC<WorkExperienceCardProps> = (
                 <p className="text-md text-gray-500 font-semibold">{title}</p>
                 <p className="text-sm text-gray-500">{dates}</p>
             </div>
-            {children}
+            {/* Expand Rows */}
+            <div className="mt-4">
+                {isOpen && (<div className="text-sm text-gray-500 animate-fadeInUp">{children}</div>)}
+            </div>
+            <button onClick={toggleExpand} className="text-blue-500 text sm mt-2 focus:outline-none hover:underline">
+                {isOpen ? "See Less" : "See More"}
+            </button>
         </div>
     );
 };

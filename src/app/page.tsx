@@ -2,6 +2,7 @@ import Image from "next/image";
 import LocationPin from "../../public/images/locationPin";
 import ArrowDown from "../../public/images/arrow_down";
 import WorkExperience from "@/app/work-experience/page";
+import TechnicalSkillsPage from "@/app/technical-skills/page";
 
 const Home = () => {
     const aboutMe = 'I am currently studying computer science at the University of Florida.';
@@ -9,9 +10,9 @@ const Home = () => {
     return (
         <>
             {/* Homepage Container */}
-            <div className="flex flex-col items-center p-5 mt-5">
+            <div className="flex flex-col items-center mt-3">
                 {/*Welcome Content with location and socials*/}
-                <div className="m-2">
+                <div className="m-1">
                     <h1 className="font-bold text-4xl text-center">Landon Zigler</h1>
                     <hr className="border-t-2 border-zinc-500  my-4 mx-auto"/>
                     <div className="flex gap-2 items-center justify-center">
@@ -57,6 +58,7 @@ const Home = () => {
             {/* Work Experience Container */}
             <div className="w-full mt-40">
               <WorkExperience/>
+                <TechnicalSkillsPage/>
             </div>
         </>
     );

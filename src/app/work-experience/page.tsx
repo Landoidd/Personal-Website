@@ -10,7 +10,7 @@ const WorkExperience = () => {
                 <h1>Work Experience</h1>
             </div>
             {/*Card Container*/}
-            <div className="flex rounded-lg">
+            <div className="flex items-start rounded-lg">
                 <WorkExperienceCard
                     companyName="Apparel Magic"
                     location="West Palm Beach, Florida"
