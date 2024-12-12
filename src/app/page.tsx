@@ -4,11 +4,15 @@ import ArrowDown from "../../public/images/arrow_down";
 import WorkExperience from "@/app/work-experience/page";
 import TechnicalSkillsPage from "@/app/technical-skills/page";
 
-const Home = () => {
+interface technicalSkillsProps {
+    className?: string
+}
+
+const Home = ({className}: technicalSkillsProps) => {
     const aboutMe = 'I am currently studying computer science at the University of Florida.';
     const learnMore = 'Scroll to learn more about me!';
     return (
-        <>
+        <div className={className}>
             {/* Homepage Container */}
             <div className="flex flex-col items-center mt-3">
                 {/*Welcome Content with location and socials*/}
@@ -57,10 +61,10 @@ const Home = () => {
 
             {/* Work Experience Container */}
             <div className="w-full">
-              <WorkExperience/>
-                <TechnicalSkillsPage/>
+              <WorkExperience className="mt-40"/>
+                <TechnicalSkillsPage className="mt-40"/>
             </div>
-        </>
+        </div>
     );
 }
 

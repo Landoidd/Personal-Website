@@ -1,8 +1,12 @@
-const TechnicalSkillsPage = () => {
+interface TechnicalSkillsPageProps {
+    className?: string
+}
+
+const TechnicalSkillsPage = ({className}: TechnicalSkillsPageProps) => {
     return (
-        <>
+        <div className={className}>
             { /*Technical Skills Header*/}
-            <div className="flex items-center justify-center text-4xl font-bold mt-40">
+            <div className="flex items-center justify-center text-4xl font-bold">
                 <h1>Technical Skills</h1>
             </div>
             {/*Frontend Skills */}
@@ -17,7 +21,7 @@ const TechnicalSkillsPage = () => {
                     <p>FrameWorks</p>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
