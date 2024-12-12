@@ -3,6 +3,9 @@ import LocationPin from "../../public/images/locationPin";
 import ArrowDown from "../../public/images/arrow_down";
 import WorkExperience from "@/app/work-experience/page";
 import TechnicalSkillsPage from "@/app/technical-skills/page";
+import ProjectsPage from "@/app/projects/page";
+import ConnectPage from "@/app/connect/page";
+import Header from "@/components/Header";
 
 interface technicalSkillsProps {
     className?: string
@@ -17,7 +20,7 @@ const Home = ({className}: technicalSkillsProps) => {
             <div className="flex flex-col items-center mt-3">
                 {/*Welcome Content with location and socials*/}
                 <div className="m-1">
-                    <h1 className="font-bold text-4xl text-center">Landon Zigler</h1>
+                   <Header name="Landon Zigler"></Header>
                     <hr className="border-t-2 border-zinc-500  my-4 mx-auto"/>
                     <div className="flex gap-2 items-center justify-center">
                         <LocationPin className="w-4 h-4 text-white"/>
@@ -61,8 +64,10 @@ const Home = ({className}: technicalSkillsProps) => {
 
             {/* Work Experience Container */}
             <div className="w-full">
-              <WorkExperience className="mt-40"/>
+                <WorkExperience className="mt-40"/>
                 <TechnicalSkillsPage className="mt-40"/>
+                <ProjectsPage className="mt-40"/>
+                <ConnectPage className="mt-40"/>
             </div>
         </div>
     );

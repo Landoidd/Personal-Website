@@ -1,5 +1,5 @@
-import Image from "next/image";
 import WorkExperienceCard from "@/components/WorkExperienceCard";
+import Header from "@/components/Header";
 
 interface WorkExperienceProps {
     className?: string
@@ -10,9 +10,7 @@ const WorkExperience = ({className}: WorkExperienceProps) => {
         /*Create a structure to store each work experience on a separate card */
         <div className={className}>
             {/* Work Experience Header */}
-                <div className="flex items-center justify-center text-4xl font-bold">
-                    <h1>Work Experience</h1>
-                </div>
+                <Header name="Work Experience"></Header>
             {/*Card Container*/}
                 <div className="flex items-start rounded-lg">
                     <WorkExperienceCard

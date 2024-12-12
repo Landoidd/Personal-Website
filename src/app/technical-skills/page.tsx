@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+
 interface TechnicalSkillsPageProps {
     className?: string
 }
@@ -6,9 +8,7 @@ const TechnicalSkillsPage = ({className}: TechnicalSkillsPageProps) => {
     return (
         <div className={className}>
             { /*Technical Skills Header*/}
-            <div className="flex items-center justify-center text-4xl font-bold">
-                <h1>Technical Skills</h1>
-            </div>
+            <Header name="Technical Skills"></Header>
             {/*Frontend Skills */}
             <div>
                 <h2>Frontend Experience</h2>
