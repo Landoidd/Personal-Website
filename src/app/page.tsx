@@ -33,7 +33,7 @@ const Home = ({className}: technicalSkillsProps) => {
                 </div>
                 {/*/!*Top of Container *!/*/}
                 <div
-                    className="flex flex-flex-wrap items-center justify-center gap-4 bg-zinc-600  shadow-zinc-700 border-zinc-500 border-2 shadow-md rounded-lg p-8 mt-10">
+                    className="flex flex-flex-wrap items-center justify-center gap-4 bg-zinc-600  shadow-zinc-700 border-zinc-500 border-2 shadow-md rounded-lg p-8 mt-5">
                     {/*Image*/}
                     <div>
                         <Image

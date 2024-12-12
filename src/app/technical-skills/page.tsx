@@ -12,8 +12,8 @@ const TechnicalSkillsPage = ({className}: TechnicalSkillsPageProps) => {
             {/*Frontend Skills */}
             <div>
                 <h2>Frontend Experience</h2>
-                {/*Languages*/}
                 <div>
+                    {/*Languages*/}
                     <p>Languages</p>
                 </div>
                 <div>
