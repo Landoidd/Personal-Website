@@ -7,11 +7,12 @@ Create default Layout of Personal Website
 export default function Layout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en" className="scroll-smooth">
-        <body className="flex min-h-screen">
+        <body className="flex flex-col min-h-screen">
+        <div className="flex flex-grow">
         {/* Left Sidebar */}
         <div className="w-1/5 sidebar"></div>
         {/* Main Content */}
-        <div className="w-3/5 main-content">
+        <div className="w-3/5 main-content flex flex-col">
             {/*Header*/}
             <header className="p-4 font-bold opacity-90">
                 {/*Navbar*/}
@@ -30,16 +31,16 @@ export default function Layout({children}: { children: React.ReactNode }) {
             {/*End of Header*/}
 
             {/* Main */}
-            <main className="m-4 animate-fadeInUp opacity-100">{children}</main>
+            <main className="flex-grow m-4 animate-fadeInUp opacity-100">{children}</main>
             {/* End of Main */}
-
-            {/* Footer */}
-            <footer className="text-center text-xs">
-                © 2024 Landon Zigler. All rights reserved.
-            </footer>
+            </div>
         </div>
         {/* Right Sidebar */}
         <div className="w-1/5 sidebar"></div>
+         {/* Footer */}
+            <footer className="text-center text-xs">
+                © 2024 Landon Zigler. All rights reserved.
+            </footer>
         </body>
         </html>
     );
