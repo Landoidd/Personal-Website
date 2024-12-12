@@ -56,7 +56,7 @@ const Home = () => {
             </div>
 
             {/* Work Experience Container */}
-            <div className="w-full mt-40">
+            <div className="w-full">
               <WorkExperience/>
                 <TechnicalSkillsPage/>
             </div>

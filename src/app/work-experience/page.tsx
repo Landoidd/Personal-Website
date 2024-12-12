@@ -6,7 +6,7 @@ const WorkExperience = () => {
         /*Create a structure to store each work experience on a separate card */
         <>
             {/* Work Experience Header */}
-            <div className="flex items-center justify-center text-4xl font-bold m-5">
+            <div className="flex items-center justify-center text-4xl font-bold mt-40">
                 <h1>Work Experience</h1>
             </div>
             {/*Card Container*/}
