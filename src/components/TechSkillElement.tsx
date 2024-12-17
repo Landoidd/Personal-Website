@@ -10,17 +10,16 @@ const TechSkillElement = ({name, logoSrc, alt}: TechSkillElementProps) => {
         <div className="flex cursor-pointer transition-transform duration-300
         hover:scale-125 md:hover:scale-110 lg:hover:scale-150 transform-origin-center
         text-white text-center max-w-full m-4">
-        <p>{name}</p>
-            <div className="ml-3 w-10 h-10">
+            <p className="flex justify-center items-center">{name}</p>
+            <div className="ml-3 w-12 h-12 relative">
                 <Image
                     src={logoSrc}
                     alt={alt}
-                    width={40}
-                    height={40}
-                    className="rounded-lg"
+                    fill
+                    style={{ objectFit: 'contain' }}
                 />
             </div>
-    </div>
+        </div>
     )
 }
 
