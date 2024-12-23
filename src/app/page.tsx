@@ -8,11 +8,7 @@ import ConnectPage from "@/app/connect/page";
 import Header from "@/components/Header";
 import SocialLink from "@/components/SocialLink";
 
-interface TechnicalSkillsPageProps {
-    className?: string
-}
-
-const Home = ({className}: TechnicalSkillsPageProps) => {
+const Home = () => {
     const PROPERTIES = {
         aboutMe: 'I am currently studying computer science at the University of Florida.',
         learnMore: 'Scroll to learn more about me!',
@@ -27,9 +23,9 @@ const Home = ({className}: TechnicalSkillsPageProps) => {
     }
 
     return (
-        <div className={className}>
+        <div className="m-5 flex flex-col flex-wrap items-center justify-center">
             {/* Homepage Container */}
-            <div className="flex flex-col items-center mt-3">
+            <div className="flex flex-col items-center">
                 {/*Welcome Content with location and socials*/}
                 <div className="m-1">
                    <Header name="Landon Zigler"></Header>
@@ -85,7 +81,7 @@ const Home = ({className}: TechnicalSkillsPageProps) => {
                 <WorkExperience className="mt-40"/>
                 <TechnicalSkillsPage className="mt-40"/>
                 <ProjectsPage className="mt-40"/>
-                <ConnectPage/>
+                <ConnectPage className="mt-40"/>
             </div>
         </div>
     );

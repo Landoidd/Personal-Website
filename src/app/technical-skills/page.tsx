@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import TechSkillElement from "@/components/TechSkillElement";
+import Subheader from "@/components/Subheader";
 
 interface TechnicalSkillsPageProps {
     className?: string
@@ -11,12 +12,7 @@ const TechnicalSkillsPage = ({className}: TechnicalSkillsPageProps) => {
             { /*Technical Skills Header*/}
             <Header name="Technical Skills"></Header>
             {/*Frontend Skills Header*/}
-            <div className="flex flex-wrap mt-5 justify-center">
-                <div className="flex flex-col">
-                    <h2 className="font-bold text-xl">Frontend Experience</h2>
-                    <hr className=" text-white w-full"/>
-                </div>
-            </div>
+            <Subheader name="Frontend Experience"/>
             <div className="flex flex-col flex-wrap w-full justify-center items-center">
                 {/*Frontend Skills Body */}
                 <div
@@ -41,12 +37,7 @@ const TechnicalSkillsPage = ({className}: TechnicalSkillsPageProps) => {
                     </div>
                 </div>
                 {/*Backend Skills Header*/}
-                <div className="flex flex-wrap m-3 justify-center">
-                    <div className="flex flex-col content-center items-center">
-                        <h2 className="text-center font-bold text-xl">Backend Experience</h2>
-                        <hr className=" text-white w-full"/>
-                    </div>
-                </div>
+                <Subheader name="Backend Experience"/>
                 {/*Backend Skills Body */}
                 <div
                     className="w-2/3 flex flex-wrap bg-zinc-600  shadow-zinc-700 border-zinc-500
