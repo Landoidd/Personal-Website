@@ -1,6 +1,6 @@
 import Image from "next/image";
 import LocationPin from "../../public/images/locationPin";
-import ArrowDown from "../../public/images/arrow_down";
+//import ArrowDown from "../../public/images/arrow_down";
 import WorkExperience from "@/app/work-experience/page";
 import TechnicalSkillsPage from "@/app/technical-skills/page";
 import ProjectsPage from "@/app/projects/page";
