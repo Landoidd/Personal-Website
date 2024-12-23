@@ -6,14 +6,26 @@ import TechnicalSkillsPage from "@/app/technical-skills/page";
 import ProjectsPage from "@/app/projects/page";
 import ConnectPage from "@/app/connect/page";
 import Header from "@/components/Header";
+import SocialLink from "@/components/SocialLink";
 
 interface technicalSkillsProps {
     className?: string
 }
 
 const Home = ({className}: technicalSkillsProps) => {
-    const aboutMe = 'I am currently studying computer science at the University of Florida.';
-    const learnMore = 'Scroll to learn more about me!';
+    const PROPERTIES = {
+        aboutMe: 'I am currently studying computer science at the University of Florida.',
+        learnMore: 'Scroll to learn more about me!',
+        linkedinURL: 'https://www.linkedin.com/in/landon-zigler/',
+        linkedinAlt: 'LinkedIn Logo',
+        linkedinTitle: 'LinkedIn',
+        linkedinImage: '/images/linkedin_logo.png',
+        githubURL: 'https://github.com/Landoidd',
+        githubAlt: 'Github Logo',
+        githubTitle: 'Github',
+        githubImage: '/images/github_logo.png',
+    }
+
     return (
         <div className={className}>
             {/* Homepage Container */}
@@ -48,16 +60,22 @@ const Home = ({className}: technicalSkillsProps) => {
                     <div className="flex flex-col items-center justify-center gap-4">
                         {/* About me */}
                         <div className="max-w-md text-center">
-                            <p className="text-2xl">{aboutMe}</p>
-                            <p className="mt-4 text-sm">{learnMore}</p>
+                            <p className="text-2xl">{PROPERTIES.aboutMe}</p>
+                            <div className="flex flex-col flex-wrap">
+                                <SocialLink src={PROPERTIES.linkedinURL} image_src={PROPERTIES.linkedinImage}
+                                            alt={PROPERTIES.linkedinAlt} title={PROPERTIES.linkedinTitle}/>
+                                <SocialLink src={PROPERTIES.githubURL} image_src={PROPERTIES.githubImage}
+                                            alt={PROPERTIES.githubAlt} title={PROPERTIES.githubTitle}/>
+                            </div>
+                            <p className="mt-4 text-sm">{PROPERTIES.learnMore}</p>
                         </div>
                         {/* Arrow */}
-                        <div className="flex flex-col items-center">
-                            <div className="w-2 h-12 bg-white animate-[pulse_2s_ease-in-out_infinite] rounded-sm"></div>
-                            <div className="w-2 h-12 bg-white animate-[pulse_2s_ease-in-out_infinite] rounded-sm"></div>
-                            <div className="w-2 h-12 bg-white animate-[pulse_2s_ease-in-out_infinite] rounded-sm"></div>
-                            <ArrowDown className="w-28 h-28 text-white animate-[pulse_2s_ease-in-out_infinite] translate-y-[-11px]"/>
-                        </div>
+                        {/*<div className="flex flex-col items-center">*/}
+                        {/*    <div className="w-2 h-12 bg-white animate-[pulse_2s_ease-in-out_infinite] rounded-sm"></div>*/}
+                        {/*    <div className="w-2 h-12 bg-white animate-[pulse_2s_ease-in-out_infinite] rounded-sm"></div>*/}
+                        {/*    <div className="w-2 h-12 bg-white animate-[pulse_2s_ease-in-out_infinite] rounded-sm"></div>*/}
+                        {/*    <ArrowDown className="w-28 h-28 text-white animate-[pulse_2s_ease-in-out_infinite] translate-y-[-11px]"/>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>
