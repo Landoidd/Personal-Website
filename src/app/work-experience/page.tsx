@@ -1,11 +1,12 @@
 import WorkExperienceCard from "@/components/WorkExperienceCard";
 import Header from "@/components/Header";
+import {FC} from "react";
 
 interface WorkExperienceProps {
     className?: string
 }
 
-const WorkExperience = ({className}: WorkExperienceProps) => {
+const WorkExperience: FC<WorkExperienceProps> = ({className}) => {
     return (
         /*Create a structure to store each work experience on a separate card */
         <div className={className}>

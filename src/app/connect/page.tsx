@@ -1,16 +1,17 @@
 import Header from "@/components/Header";
+import { FC } from "react";
 
-interface connectProps {
-    className?: string
+interface ConnectProps {
+    className?: string;
 }
 
-const ConnectPage = ({className}: connectProps) => {
+const ConnectPage: FC<ConnectProps> = ({ className }) => {
     return (
         <div className={className}>
             {/*Connect Header */}
-            <Header name="Connect"></Header>
+            <Header name="Connect" />
         </div>
     );
-}
+};
 
 export default ConnectPage;

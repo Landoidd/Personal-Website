@@ -1,11 +1,12 @@
 import Header from "@/components/Header";
 import TechSkillElement from "@/components/TechSkillElement";
+import {FC} from "react";
 
 interface TechnicalSkillsPageProps {
     className?: string
 }
 
-const TechnicalSkillsPage = ({className}: TechnicalSkillsPageProps) => {
+const TechnicalSkillsPage:  FC<TechnicalSkillsPageProps> = ({className}) => {
     return (
         <div className={className}>
             { /*Technical Skills Header*/}
