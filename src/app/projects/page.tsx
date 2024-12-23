@@ -1,11 +1,10 @@
 import Header from "@/components/Header";
-import {FC} from "react";
 
-interface projectsProps {
+interface ProjectPageProps {
     className?: string
 }
 
-const ProjectsPage: FC<projectsProps> = ({className}) => {
+const ProjectsPage = ({className}: ProjectPageProps) => {
     return (
         <div className={className}>
             {/*Projects Header */}

@@ -8,11 +8,11 @@ import ConnectPage from "@/app/connect/page";
 import Header from "@/components/Header";
 import SocialLink from "@/components/SocialLink";
 
-interface technicalSkillsProps {
+interface TechnicalSkillsPageProps {
     className?: string
 }
 
-const Home = ({className}: technicalSkillsProps) => {
+const Home = ({className}: TechnicalSkillsPageProps) => {
     const PROPERTIES = {
         aboutMe: 'I am currently studying computer science at the University of Florida.',
         learnMore: 'Scroll to learn more about me!',
