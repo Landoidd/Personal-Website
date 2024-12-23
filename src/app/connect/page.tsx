@@ -1,12 +1,12 @@
 import Header from "@/components/Header";
 
-interface ConnectPageProps {
-    className?: string;
-}
+// interface ConnectPageProps {
+//     className?: string;
+// }
 
-const ConnectPage= ({ className }: ConnectPageProps) => {
+const ConnectPage= () => {
     return (
-        <div className={className}>
+        <div className>
             {/*Connect Header */}
             <Header name="Connect" />
         </div>

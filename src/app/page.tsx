@@ -85,7 +85,7 @@ const Home = ({className}: TechnicalSkillsPageProps) => {
                 <WorkExperience className="mt-40"/>
                 <TechnicalSkillsPage className="mt-40"/>
                 <ProjectsPage className="mt-40"/>
-                <ConnectPage className="mt-40"/>
+                <ConnectPage/>
             </div>
         </div>
     );
