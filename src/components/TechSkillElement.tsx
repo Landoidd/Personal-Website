@@ -7,7 +7,7 @@ interface TechSkillElementProps {
 }
 const TechSkillElement = ({name, logoSrc, alt}: TechSkillElementProps) => {
     return (
-        <div className="flex cursor-pointer transition-transform duration-300
+        <div className="flex flex-wrap cursor-pointer transition-transform duration-300
         hover:scale-125 md:hover:scale-110 lg:hover:scale-150 transform-origin-center
         text-white text-center max-w-full m-4">
             <p className="flex justify-center items-center">{name}</p>

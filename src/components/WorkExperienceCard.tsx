@@ -28,7 +28,7 @@ const WorkExperienceCard: React.FC<WorkExperienceCardProps> = (
     return (
         <div className="w-1/2 m-4 p-4 bg-white rounded-lg border-2 border-zinc-500">
             {/* Card Header*/}
-            <div className="flex justify-between">
+            <div className="flex flex-wrap justify-between">
                 <div className="flex flex-wrap flex-col">
                     <p className="text-lg text-gray-600 font-extrabold">{companyName}</p>
                     <div className="flex">
@@ -52,7 +52,7 @@ const WorkExperienceCard: React.FC<WorkExperienceCardProps> = (
             </div>
             {/* Expand Rows */}
             <div className="mt-4">
-                {isOpen && (<div className="text-sm text-gray-500 animate-fadeInUp">{children}</div>)}
+                {isOpen && (<div className="text-sm text-gray-500 animate-fadeInUp overflow-hidden">{children}</div>)}
             </div>
             <button onClick={toggleExpand} className="text-blue-500 text sm mt-2 focus:outline-none hover:underline">
                 {isOpen ? "See Less" : "See More"}
