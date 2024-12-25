@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import SocialLink from "@/components/SocialLink";
-import PROPERTIES from "@/app/utils/utils";
+import {PROPERTIES} from "@/app/utils/utils";
 const ConnectPage= () => {
     return (
         <div>

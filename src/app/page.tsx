@@ -6,8 +6,7 @@ import ProjectsPage from "@/app/projects/page";
 import ConnectPage from "@/app/connect/page";
 import Header from "@/components/Header";
 import SocialLink from "@/components/SocialLink";
-import PROPERTIES from "@/app/utils/utils";
-
+import {PROPERTIES} from "@/app/utils/utils";
 
 const SECTIONS = [
     { component: WorkExperience },

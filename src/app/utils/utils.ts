@@ -1,4 +1,4 @@
-const PROPERTIES = {
+export const PROPERTIES = {
     aboutMe: 'I am currently studying computer science at the University of Florida.',
     learnMore: 'Scroll to learn more about me!',
     linkedinURL: 'https://www.linkedin.com/in/landon-zigler/',
@@ -15,5 +15,4 @@ const PROPERTIES = {
     gmailImage: '/images/gmail_logo.png',
 }
 
-
-export default PROPERTIES;
+export const FILLERTEXT = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
