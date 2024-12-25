@@ -66,8 +66,8 @@ const Home = () => {
 
             {/*Display all the sections under the Home page*/}
             <div className="w-full">
-                {SECTIONS.map(({component: SectionComponent}) => (
-                    <div className="mt-40">
+                {SECTIONS.map(({component: SectionComponent}, index) => (
+                    <div className="mt-40" key={index}>
                         <SectionComponent/>
                     </div>
                 ))}
