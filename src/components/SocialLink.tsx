@@ -8,7 +8,7 @@ interface SocialLinkProps {
 }
 const SocialLink = ({src, image_src, alt, title}: SocialLinkProps) => {
     return (
-        <div className="flex w-full justify-center items-center mt-5 gap-2 hover:underline">
+        <div className="flex w-full justify-center items-center gap-2 hover:underline">
             <Image src={image_src} alt={alt}
                    width={25}
                    height={25}/>

@@ -7,21 +7,9 @@ import ProjectsPage from "@/app/projects/page";
 import ConnectPage from "@/app/connect/page";
 import Header from "@/components/Header";
 import SocialLink from "@/components/SocialLink";
+import PROPERTIES from "@/app/utils/utils";
 
 const Home = () => {
-    const PROPERTIES = {
-        aboutMe: 'I am currently studying computer science at the University of Florida.',
-        learnMore: 'Scroll to learn more about me!',
-        linkedinURL: 'https://www.linkedin.com/in/landon-zigler/',
-        linkedinAlt: 'LinkedIn Logo',
-        linkedinTitle: 'LinkedIn',
-        linkedinImage: '/images/linkedin_logo.png',
-        githubURL: 'https://github.com/Landoidd',
-        githubAlt: 'Github Logo',
-        githubTitle: 'Github',
-        githubImage: '/images/github_logo.png',
-    }
-
     return (
         <div className="m-5 flex flex-col flex-wrap items-center justify-center">
             {/* Homepage Container */}
@@ -57,7 +45,7 @@ const Home = () => {
                         {/* About me */}
                         <div className="max-w-md text-center">
                             <p className="text-2xl">{PROPERTIES.aboutMe}</p>
-                            <div className="flex flex-col flex-wrap">
+                            <div className="flex flex-col flex-wrap m-4 gap-4">
                                 <SocialLink src={PROPERTIES.linkedinURL} image_src={PROPERTIES.linkedinImage}
                                             alt={PROPERTIES.linkedinAlt} title={PROPERTIES.linkedinTitle}/>
                                 <SocialLink src={PROPERTIES.githubURL} image_src={PROPERTIES.githubImage}
