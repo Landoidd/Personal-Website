@@ -13,6 +13,11 @@ export const PROPERTIES = {
     gmailAlt: 'Gmail Logo',
     gmailTitle: 'Gmail',
     gmailImage: '/images/gmail_logo.png',
+    PrecisionDesc: "Redesigned and optimized submission buttons using Vue.js, enhancing scalability, responsiveness and user interaction on the website.",
+    Precision2Desc: "Automated 50% of front-end testing using Playwright, aligning with Agile testing practices.",
+    ApparelDesc: "Built a fully functional chatbot using JavaScript, LangChain, and OpenAI APIs, capable of handling dynamic user queries in real time.",
+    Apparel2Desc: "Developed and deployed scalable Selenium-based test cases covering over 50% of the UI.",
+    Apparel3Desc: "Collaborated with iOS developers to debug 100% of reported issues.",
 }
 
 export const FILLERTEXT = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";

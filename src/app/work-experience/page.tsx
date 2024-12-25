@@ -1,5 +1,6 @@
 import WorkExperienceCard from "@/components/WorkExperienceCard";
 import Header from "@/components/Header";
+import {PROPERTIES} from "@/app/utils/utils";
 
 const WorkExperience = () => {
     return (
@@ -20,10 +21,9 @@ const WorkExperience = () => {
                         {/*Roles*/}
                         <div className="flex flex-col flex-wrap m-2">
                             <ul className="text-sm text-gray-500 list-disc">
-                                <li>I worked with Javascript using Selenium, LangChain, and an OpenAI API key.</li>
-                                <li>I was able to complete a 100% working chatbot that the company assigned me to
-                                    create.
-                                </li>
+                                <li>{PROPERTIES.ApparelDesc}</li>
+                                <li>{PROPERTIES.Apparel2Desc}</li>
+                                <li>{PROPERTIES.Apparel3Desc}</li>
                             </ul>
                         </div>
                     </WorkExperienceCard>
@@ -38,12 +38,8 @@ const WorkExperience = () => {
                         {/*Roles*/}
                         <div className="flex flex-col flex-wrap m-2">
                             <ul className="text-sm text-gray-500 list-disc">
-                                <li>I updated 100% of the submission buttons on the front end of their website with
-                                    Vue.js.
-                                </li>
-                                <li>I contributed to integrating 50% more of automated tests for the frontend utilizing
-                                    Playwright.
-                                </li>
+                                <li>{PROPERTIES.PrecisionDesc}</li>
+                                <li>{PROPERTIES.Precision2Desc}</li>
                             </ul>
                         </div>
                     </WorkExperienceCard>
