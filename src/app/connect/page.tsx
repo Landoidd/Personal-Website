@@ -1,13 +1,9 @@
 import Header from "@/components/Header";
 import SocialLink from "@/components/SocialLink";
 import PROPERTIES from "@/app/utils/utils";
-interface ConnectPageProps {
-    className?: string;
-}
-
-const ConnectPage= ({className}: ConnectPageProps) => {
+const ConnectPage= () => {
     return (
-        <div className={className}>
+        <div>
             {/*Connect Header */}
             <Header name="Connect" />
             {/*Socials*/}

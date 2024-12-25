@@ -15,4 +15,5 @@ const PROPERTIES = {
     gmailImage: '/images/gmail_logo.png',
 }
 
+
 export default PROPERTIES;

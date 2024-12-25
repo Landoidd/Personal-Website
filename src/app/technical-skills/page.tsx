@@ -2,13 +2,9 @@ import Header from "@/components/Header";
 import TechSkillElement from "@/components/TechSkillElement";
 import Subheader from "@/components/Subheader";
 
-interface TechnicalSkillsPageProps {
-    className?: string
-}
-
-const TechnicalSkillsPage = ({className}: TechnicalSkillsPageProps) => {
+const TechnicalSkillsPage = () => {
     return (
-        <div className={className}>
+        <div>
             { /*Technical Skills Header*/}
             <Header name="Technical Skills"></Header>
             {/*Frontend Skills Header*/}

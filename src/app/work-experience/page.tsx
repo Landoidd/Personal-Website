@@ -1,14 +1,10 @@
 import WorkExperienceCard from "@/components/WorkExperienceCard";
 import Header from "@/components/Header";
 
-interface WorkExperienceProps {
-    className?: string
-}
-
-const WorkExperience = ({className}: WorkExperienceProps) => {
+const WorkExperience = () => {
     return (
         /*Create a structure to store each work experience on a separate card */
-        <div className={className}>
+        <div>
             {/* Work Experience Header */}
                 <Header name="Work Experience"></Header>
             {/*Card Container*/}

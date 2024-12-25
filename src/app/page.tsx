@@ -8,6 +8,14 @@ import Header from "@/components/Header";
 import SocialLink from "@/components/SocialLink";
 import PROPERTIES from "@/app/utils/utils";
 
+
+const SECTIONS = [
+    { component: WorkExperience },
+    { component: TechnicalSkillsPage },
+    { component: ProjectsPage },
+    { component: ConnectPage },
+];
+
 const Home = () => {
     return (
         <div className="m-5 flex flex-col flex-wrap items-center justify-center">
@@ -56,12 +64,13 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Work Experience Container */}
+            {/*Display all the sections under the Home page*/}
             <div className="w-full">
-                <WorkExperience className="mt-40"/>
-                <TechnicalSkillsPage className="mt-40"/>
-                <ProjectsPage className="mt-40"/>
-                <ConnectPage className="mt-40"/>
+                {SECTIONS.map(({component: SectionComponent}) => (
+                    <div className="mt-40">
+                        <SectionComponent/>
+                    </div>
+                ))}
             </div>
         </div>
     );

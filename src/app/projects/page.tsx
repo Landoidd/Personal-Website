@@ -1,14 +1,12 @@
 import Header from "@/components/Header";
 
-interface ProjectPageProps {
-    className?: string
-}
-
-const ProjectsPage = ({className}: ProjectPageProps) => {
+const ProjectsPage = () => {
     return (
-        <div className={className}>
+        <div>
             {/*Projects Header */}
             <Header name="Projects"></Header>
+
+            {/*Projects Body*/}
         </div>
     );
 }
