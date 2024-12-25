@@ -1,6 +1,5 @@
 import Image from "next/image";
 import LocationPin from "../../public/images/locationPin";
-//import ArrowDown from "../../public/images/arrow_down";
 import WorkExperience from "@/app/work-experience/page";
 import TechnicalSkillsPage from "@/app/technical-skills/page";
 import ProjectsPage from "@/app/projects/page";
@@ -53,13 +52,6 @@ const Home = () => {
                             </div>
                             <p className="mt-4 text-sm">{PROPERTIES.learnMore}</p>
                         </div>
-                        {/* Arrow */}
-                        {/*<div className="flex flex-col items-center">*/}
-                        {/*    <div className="w-2 h-12 bg-white animate-[pulse_2s_ease-in-out_infinite] rounded-sm"></div>*/}
-                        {/*    <div className="w-2 h-12 bg-white animate-[pulse_2s_ease-in-out_infinite] rounded-sm"></div>*/}
-                        {/*    <div className="w-2 h-12 bg-white animate-[pulse_2s_ease-in-out_infinite] rounded-sm"></div>*/}
-                        {/*    <ArrowDown className="w-28 h-28 text-white animate-[pulse_2s_ease-in-out_infinite] translate-y-[-11px]"/>*/}
-                        {/*</div>*/}
                     </div>
                 </div>
             </div>
