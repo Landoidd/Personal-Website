@@ -23,6 +23,6 @@ To run this website locally, follow these steps:
    git clone https://github.com/Landoidd/Personal-Website.git
 
 #TODO
-- Continue working on home endpoint and finish card component
+- Work on Projects Page and make display dynamic for mobile
 
 ### © 2024 Landon Zigler. All rights reserved.
