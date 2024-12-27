@@ -1,8 +1,9 @@
 "use client"
-import {useState} from "react";
+import React, {useState} from "react";
 import "./globals.css";
 import Link from "next/link";
 import HamburgerIcon from "../../public/images/hamburger_icon";
+import HamburgerIconClose from "../../public/images/HamburgerIconClose";
 
 /*
 Create default Layout of Personal Website
@@ -41,10 +42,13 @@ export default function Layout({children}: { children: React.ReactNode }) {
                         </ul>
                     </nav>
                     {/* Hamburger Icon */}
-                    <div className="flex md:hidden justify-start items-center" onClick={toggleMenu}>
-                        <button className="text-white">
-                          <HamburgerIcon/>
-                        </button>
+                    <div className="flex md:hidden justify-center m-2 items-center" onClick={toggleMenu}>
+                        {!isOpen && <button className="text-white w-12 h-12">
+                            <HamburgerIcon/>
+                        </button>}
+                        {isOpen && <button className="text-white w-12 h-12">
+                            <HamburgerIconClose/>
+                        </button>}
                     </div>
                 </header>
                 {/*End of Header*/}
