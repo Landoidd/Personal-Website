@@ -9,7 +9,7 @@ const WorkExperience = () => {
             {/* Work Experience Header */}
                 <Header name="Work Experience"></Header>
             {/*Card Container*/}
-                <div className="flex items-start rounded-lg">
+                <div className="flex flex-col md:flex-row md:items-start items-center justify-center rounded-lg">
                     <WorkExperienceCard
                         companyName="Apparel Magic"
                         location="West Palm Beach, Florida"

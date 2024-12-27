@@ -8,7 +8,7 @@ const ProjectsPage = () => {
             <Header name="Projects"></Header>
 
             {/*Projects Body*/}
-            <div className="flex flex-wrap justify-around items-center content-center m-4">
+            <div className="flex flex-col flex-wrap md:flex-row justify-around items-center content-center m-4">
                 <Project/>
                 <Project/>
                 <Project/>

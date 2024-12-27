@@ -22,7 +22,7 @@ const Home = () => {
             <div className="flex flex-col items-center">
                 {/*Welcome Content with location and socials*/}
                 <div className="m-1">
-                   <Header name="Landon Zigler"></Header>
+                    <Header name="Landon Zigler"></Header>
                     <hr className="border-t-2 border-zinc-500  my-4 mx-auto"/>
                     <div className="flex gap-2 items-center justify-center">
                         <LocationPin className="w-4 h-4 text-white"/>
@@ -35,7 +35,7 @@ const Home = () => {
                 </div>
                 {/*/!*Top of Container *!/*/}
                 <div
-                    className="flex flex-flex-wrap items-center justify-center gap-4 bg-zinc-600  shadow-zinc-700 border-zinc-500 border-2 shadow-md rounded-lg p-8 mt-5">
+                    className="flex flex-col md:flex-row items-center justify-center gap-4 bg-zinc-600 shadow-zinc-700 border-zinc-500 border-2 shadow-md rounded-lg p-8 mt-5">
                     {/*Image*/}
                     <div>
                         <Image
