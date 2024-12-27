@@ -66,40 +66,13 @@
 }
 
 /*
-Add gradient to body and to sidebar
- */
-html {
-  font-family: "Arial", sans-serif;
-}
-
-body {
-  background: linear-gradient(to bottom, #1a1a1a, #000000);
-  filter: contrast(110%);
-  color: white;
-}
-
-.sidebar {
-  background: linear-gradient(to bottom, #333333, #252625);
-  filter: contrast(110%);
-  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
-}
-
-/*
 Add a backdrop filter, bottom border to our main content
  */
 .main-content {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(1px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 2px 0 5px rgba(100,100,100,0.1);
-  filter: contrast(110%);
+  filter: contrast(95%);
 }
 
-/*
-Add backdrop and box shadow to header
- */
-header {
-  background: rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
 
