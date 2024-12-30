@@ -7,8 +7,8 @@ const ConnectPage= () => {
             {/*Connect Header */}
             <Header name="Connect" />
             {/*Socials*/}
-            <div className="m-4 bg-zinc-600 border-2 border-zinc-500 rounded-lg">
-                <div className="flex justify-around items-center w-full m-4">
+            <div className="flex mt-4 bg-zinc-600 border-2 border-zinc-500 rounded-lg shadow-zinc-700 shadow-md">
+                <div className="flex justify-around items-center w-full m-4 gap-4">
                     <SocialLink src={PROPERTIES.linkedinURL} image_src={PROPERTIES.linkedinImage}
                                 alt={PROPERTIES.linkedinAlt} title={PROPERTIES.linkedinTitle}/>
                     <SocialLink src={PROPERTIES.githubURL} image_src={PROPERTIES.githubImage}

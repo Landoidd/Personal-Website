@@ -4,7 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import HamburgerIcon from "../../public/images/hamburger_icon";
 import HamburgerIconClose from "../../public/images/HamburgerIconClose";
-
+import { Analytics } from "@vercel/analytics/react"
 /*
 Create default Layout of Personal Website
  */
@@ -17,6 +17,7 @@ export default function Layout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en" className="scroll-smooth font-sans">
         <body className="flex flex-col min-h-screen bg-gradient-to-b from-zinc-800 to-zinc-900 text-white">
+        <Analytics/>
         <div className="flex flex-grow w-full">
             {/* Left Sidebar */}
             <div className="hidden md:block w-1/5"></div>

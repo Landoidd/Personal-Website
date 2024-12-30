@@ -26,7 +26,7 @@ const WorkExperienceCard: React.FC<WorkExperienceCardProps> = (
 
 
     return (
-        <div className="w-1/2 m-4 p-4 bg-white rounded-lg border-2 border-zinc-500">
+        <div className="w-full md:w-1/2 m-4 p-4 bg-white rounded-lg border-2 border-zinc-500 shadow-zinc-700 shadow-md">
             {/* Card Header*/}
             <div className="flex flex-wrap justify-between">
                 <div className="flex flex-wrap flex-col">
