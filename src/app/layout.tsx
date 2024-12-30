@@ -30,7 +30,7 @@ export default function Layout({children}: { children: React.ReactNode }) {
                     <nav className="container mx-auto justify-around">
                         {/* Define large and small screen size layout for navbar */}
                         <ul
-                            className={`flex flex-col gap-2 items-center font-sans md:flex md:flex-row md:justify-around ${isOpen ? "block" : "hidden"}`}
+                            className={`flex flex-col gap-2 items-center font-sans text-lg md:flex md:flex-row md:justify-around ${isOpen ? "block" : "hidden"}`}
                         >
                             <li><Link className="hover:underline cursor-pointer" href="/">Home</Link></li>
                             <li><Link className="hover:underline cursor-pointer" href="/work-experience">Work
