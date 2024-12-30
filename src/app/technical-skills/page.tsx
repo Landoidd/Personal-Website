@@ -9,10 +9,10 @@ const TechnicalSkillsPage = () => {
             <Header name="Technical Skills"></Header>
             {/*Frontend Skills Header*/}
             <Subheader name="Frontend Experience"/>
-            <div className="flex flex-col flex-wrap w-full justify-center items-center">
+            <div className="flex flex-col w-full justify-center items-center">
                 {/*Frontend Skills Body */}
                 <div
-                    className="w-2/3 flex flex-wrap bg-zinc-600  shadow-zinc-700 border-zinc-500 border-2 shadow-md
+                    className="w-full md:w-2/3 flex flex-wrap bg-zinc-600  shadow-zinc-700 border-zinc-500 border-2 shadow-md
                 rounded-lg m-5">
                     <div className="flex w-full justify-around">
                         <TechSkillElement name="HTML" logoSrc="/images/html_logo.png"
@@ -36,7 +36,7 @@ const TechnicalSkillsPage = () => {
                 <Subheader name="Backend Experience"/>
                 {/*Backend Skills Body */}
                 <div
-                    className="w-2/3 flex flex-wrap bg-zinc-600  shadow-zinc-700 border-zinc-500
+                    className="w-full md:w-2/3 flex flex-wrap bg-zinc-600  shadow-zinc-700 border-zinc-500
                 border-2 shadow-md rounded-lg justify-around mt-5">
                     <div className="flex w-full justify-around">
                         <TechSkillElement name="Node.js" logoSrc="/images/nodejs_logo.png"

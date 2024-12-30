@@ -20,7 +20,7 @@ const WorkExperience = () => {
                     >
                         {/*Roles*/}
                         <div className="flex flex-col flex-wrap m-2">
-                            <ul className="text-sm text-gray-500 list-disc">
+                            <ul className="text-sm text-gray-500 list-disc p-2">
                                 <li>{PROPERTIES.ApparelDesc}</li>
                                 <li>{PROPERTIES.Apparel2Desc}</li>
                                 <li>{PROPERTIES.Apparel3Desc}</li>
@@ -37,7 +37,7 @@ const WorkExperience = () => {
                     >
                         {/*Roles*/}
                         <div className="flex flex-col flex-wrap m-2">
-                            <ul className="text-sm text-gray-500 list-disc">
+                            <ul className="text-sm text-gray-500 list-disc p-2">
                                 <li>{PROPERTIES.PrecisionDesc}</li>
                                 <li>{PROPERTIES.Precision2Desc}</li>
                             </ul>
