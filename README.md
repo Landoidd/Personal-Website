@@ -1,14 +1,14 @@
 # Personal Website
 
-Welcome to my personal website! This will eventually showcase my work experience, technical skills, projects and contact info.
+Welcome to my personal website! This showcases my work experience, technical skills, projects and contact info.
 
 ## Content
 
-- **Home**: Introduction to who I am
+- **Home**: Introduction page with links
 - **Technical Skills**: List frameworks and languages I have experience with.
 - **Work Experience**: List past companies I have worked for.
 - **Projects**: List past and current projects I am working on.
-- **Contact**: Leave links for socials.
+- **Contact**: Links for socials to connect with me
 
 ## Technologies Being Used
 
@@ -21,8 +21,5 @@ To run this website locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Landoidd/Personal-Website.git
-
-#TODO
-- Work on Projects Page and make display dynamic for mobile
 
 ### © 2024 Landon Zigler. All rights reserved.
