@@ -21,5 +21,8 @@ To run this website locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Landoidd/Personal-Website.git
+2. Run:
+   ```bash
+   pnpm dev
 
 ### © 2025 Landon Zigler. All rights reserved.
