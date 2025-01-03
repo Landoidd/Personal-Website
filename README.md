@@ -22,4 +22,4 @@ To run this website locally, follow these steps:
    ```bash
    git clone https://github.com/Landoidd/Personal-Website.git
 
-### © 2024 Landon Zigler. All rights reserved.
+### © 2025 Landon Zigler. All rights reserved.
