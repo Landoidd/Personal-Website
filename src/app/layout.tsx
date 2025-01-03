@@ -10,7 +10,7 @@ Create default Layout of Personal Website
  */
 export default function Layout({children}: { children: React.ReactNode }) {
     const [isOpen, setIsOpen] = useState(false);
-
+    const date = new Date();
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     }
@@ -65,7 +65,7 @@ export default function Layout({children}: { children: React.ReactNode }) {
 
         {/* Footer */}
         <footer className="text-center text-xs">
-            © 2024 Landon Zigler. All rights reserved.
+            © {date.getFullYear()} Landon Zigler. All rights reserved.
         </footer>
         </body>
         </html>
