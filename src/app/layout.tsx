@@ -25,7 +25,7 @@ export default function Layout({children}: { children: React.ReactNode }) {
             {/* Main Content */}
             <div className="w-full md:w-3/5 main-content flex flex-col">
                 {/*Header*/}
-                <header className="bg-zinc-800 sticky top-0 shadow-md z-50 md:p-4 font-bold md:bg-white/10 md:border-b-2 md:border-white/30">
+                <header className="bg-zinc-800 sticky top-0 shadow-md z-50 md:p-4 font-bold md:bg-white/10 md:border-b-2 md:border-white/30 md:static">
                     {/* Hamburger Icon */}
                     <div className="flex md:hidden justify-start m-2 items-center" onClick={toggleMenu}>
                         {!isOpen && <button className="text-white w-12 h-12">
