@@ -25,12 +25,21 @@ export default function Layout({children}: { children: React.ReactNode }) {
             {/* Main Content */}
             <div className="w-full md:w-3/5 main-content flex flex-col">
                 {/*Header*/}
-                <header className="p-4 font-bold bg-white/10 border-b-2 border-white/30">
+                <header className="bg-zinc-800 sticky top-0 shadow-md z-50 md:p-4 font-bold md:bg-white/10 md:border-b-2 md:border-white/30">
+                    {/* Hamburger Icon */}
+                    <div className="flex md:hidden justify-start m-2 items-center" onClick={toggleMenu}>
+                        {!isOpen && <button className="text-white w-12 h-12">
+                            <HamburgerIcon/>
+                        </button>}
+                        {isOpen && <button className="text-white w-12 h-12">
+                            <HamburgerIconClose/>
+                        </button>}
+                    </div>
                     {/*Navbar*/}
                     <nav className="container mx-auto justify-around">
                         {/* Define large and small screen size layout for navbar */}
                         <ul
-                            className={`flex flex-col gap-2 items-center font-sans text-lg md:flex md:flex-row md:justify-around ${isOpen ? "block" : "hidden"}`}
+                            className={`flex flex-col gap-2 items-center font-sans md:text-lg md:flex md:flex-row md:justify-around ${isOpen ? "block" : "hidden"}`}
                         >
                             <li><Link className="hover:underline cursor-pointer" href="/">Home</Link></li>
                             <li><Link className="hover:underline cursor-pointer" href="/work-experience">Work
@@ -42,15 +51,6 @@ export default function Layout({children}: { children: React.ReactNode }) {
                             <li><Link className="hover:underline cursor-pointer" href="/connect">Connect</Link></li>
                         </ul>
                     </nav>
-                    {/* Hamburger Icon */}
-                    <div className="flex md:hidden justify-center m-2 items-center" onClick={toggleMenu}>
-                        {!isOpen && <button className="text-white w-12 h-12">
-                            <HamburgerIcon/>
-                        </button>}
-                        {isOpen && <button className="text-white w-12 h-12">
-                            <HamburgerIconClose/>
-                        </button>}
-                    </div>
                 </header>
                 {/*End of Header*/}
 
