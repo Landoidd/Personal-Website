@@ -35,9 +35,9 @@ const Home = () => {
                 </div>
                 {/*/!*Top of Container *!/*/}
                 <div
-                    className="flex text-md md:flex-row items-center justify-center gap-4 bg-zinc-600 shadow-zinc-700 border-zinc-500 border-2 shadow-md rounded-lg p-8 mt-5">
+                    className="flex flex-col text-md md:flex-row items-center justify-center gap-4 bg-zinc-600 shadow-zinc-700 border-zinc-500 border-2 shadow-md rounded-lg p-8 mt-5">
                     {/*Image*/}
-                    <div>
+                    <div className="w-2/3">
                         <Image
                             src="/images/professional_photo.jpg"
                             alt="Photo of Me"
@@ -51,7 +51,7 @@ const Home = () => {
                         {/* About me */}
                         <div className="max-w-md text-center">
                             <p className="md:text-2xl">{PROPERTIES.aboutMe}</p>
-                            <div className="md:text-lg flex flex-col flex-wrap m-4 gap-4 text-sm">
+                            <div className="md:text-lg flex flex-col flex-wrap m-4 gap-4 text-md">
                                 <SocialLink src={PROPERTIES.linkedinURL} image_src={PROPERTIES.linkedinImage}
                                             alt={PROPERTIES.linkedinAlt} title={PROPERTIES.linkedinTitle}/>
                                 <SocialLink src={PROPERTIES.githubURL} image_src={PROPERTIES.githubImage}
