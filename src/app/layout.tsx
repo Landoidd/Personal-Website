@@ -39,16 +39,16 @@ export default function Layout({children}: { children: React.ReactNode }) {
                     <nav className="container mx-auto justify-around">
                         {/* Define large and small screen size layout for navbar */}
                         <ul
-                            className={`flex flex-col gap-2 items-center font-sans md:text-lg md:flex md:flex-row md:justify-around ${isOpen ? "block" : "hidden"}`}
+                            className={`flex flex-col gap-10 text-2xl items-center font-sans md:gap-2 md:text-lg md:flex md:flex-row md:justify-around ${isOpen ? "block" : "hidden"}`}
                         >
-                            <li><Link className="hover:underline cursor-pointer" href="/">Home</Link></li>
-                            <li><Link className="hover:underline cursor-pointer" href="/work-experience">Work
+                            <li><Link className="hover:underline cursor-pointer" href="/" onClick={toggleMenu}>Home</Link></li>
+                            <li><Link className="hover:underline cursor-pointer" href="/work-experience" onClick={toggleMenu}>Work
                                 Experience</Link></li>
-                            <li><Link className="hover:underline cursor-pointer" href="/technical-skills">Technical
+                            <li><Link className="hover:underline cursor-pointer" href="/technical-skills" onClick={toggleMenu}>Technical
                                 Skills</Link></li>
-                            <li><Link className="hover:underline cursor-pointer" href="/projects">Projects</Link>
+                            <li><Link className="hover:underline cursor-pointer" href="/projects" onClick={toggleMenu}>Projects</Link>
                             </li>
-                            <li><Link className="hover:underline cursor-pointer" href="/connect">Connect</Link></li>
+                            <li><Link className="hover:underline cursor-pointer" href="/connect" onClick={toggleMenu}>Connect</Link></li>
                         </ul>
                     </nav>
                 </header>
