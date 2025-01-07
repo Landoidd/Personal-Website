@@ -1,6 +1,7 @@
 # Personal Website
 
 Welcome to my personal website! This showcases my work experience, technical skills, projects and contact info.
+https://www.lzigler.dev/
 
 ## Content
 
