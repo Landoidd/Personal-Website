@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/SectionHeader";
 import Project from "@/components/Project";
 
 const ProjectsPage = () => {

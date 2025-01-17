@@ -1,5 +1,5 @@
 import WorkExperienceCard from "@/components/WorkExperienceCard";
-import Header from "@/components/Header";
+import Header from "@/components/SectionHeader";
 import {PROPERTIES} from "@/app/utils/utils";
 
 const WorkExperience = () => {

@@ -16,8 +16,8 @@ interface WorkExperienceCardProps {
 /*
 Define WorkExperienceCard
  */
-const WorkExperienceCard: React.FC<WorkExperienceCardProps> = (
-    {companyName, location, logoSrc, altText, title, dates, children}) => {
+const WorkExperienceCard = (
+    {companyName, location, logoSrc, altText, title, dates, children}: WorkExperienceCardProps) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleExpand = () => {
