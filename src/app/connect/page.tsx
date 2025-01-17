@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/SectionHeader";
 import SocialLink from "@/components/SocialLink";
 import {PROPERTIES} from "@/app/utils/utils";
 const ConnectPage= () => {

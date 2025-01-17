@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/SectionHeader";
 import TechSkillElement from "@/components/TechSkillElement";
 import Subheader from "@/components/Subheader";
 
