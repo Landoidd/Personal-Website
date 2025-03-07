@@ -1,6 +1,6 @@
 export const PROPERTIES = {
-    aboutMe: 'I am currently studying computer science at the University of Florida.',
-    learnMore: 'Scroll to learn more about me!',
+    photoOfMe: "/images/photoOfMe.JPG",
+    myRewards: "/images/MyRewardsLogo1.png",
     linkedinURL: 'https://www.linkedin.com/in/landon-zigler/',
     linkedinAlt: 'LinkedIn Logo',
     linkedinTitle: 'LinkedIn',
@@ -19,5 +19,3 @@ export const PROPERTIES = {
     Apparel2Desc: "Developed and deployed scalable Selenium-based test cases covering over 50% of the UI.",
     Apparel3Desc: "Collaborated with iOS developers to debug 100% of reported issues.",
 }
-
-export const FILLERTEXT = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
