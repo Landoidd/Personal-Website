@@ -43,7 +43,7 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-background">
-      <section ref={homeRef}/>
+      <section ref={homeRef} />
       <header className="sticky top-0 z-50 w-full border-b bg-background/100 backdrop-blur">
         <div className="container flex h-16 items-center">
           <div className="mr-4 hidden md:flex">
@@ -216,7 +216,7 @@ export default function Portfolio() {
                   "React",
                   "Typescript",
                   "Next.js",
-                  "AWS"
+                  "AWS",
                 ]}
                 status="Coming soon"
               />
@@ -229,7 +229,7 @@ export default function Portfolio() {
                   "Tailwind",
                   "Typescript",
                   "Sentry",
-                  "Drizzle ORM"
+                  "Drizzle ORM",
                 ]}
                 status="Github"
                 githubLink="https://github.com/Landoidd/MyPopManager"
@@ -237,10 +237,7 @@ export default function Portfolio() {
               <ProjectCard
                 title="Pokemon Battle Simulator"
                 description="SFML game that uses two data structures to fetch stats and simulate a Pokemon battle"
-                technologies={[
-                  "C++",
-                  "SFML",
-                ]}
+                technologies={["C++", "SFML"]}
                 status="Github"
                 githubLink="https://github.com/Landoidd/MyPopManager"
               />
@@ -263,47 +260,51 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="mx-auto flex items-start justify-center md:p-12">
-              <Card className="w-full max-w-lg">
+              <Card className="w-full max-w-lg flex-col md:flex">
                 <CardHeader className="text-center">
                   <CardTitle>Contact Information</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-col md:flex-row space-y-6 text-center">
-                  <div className="flex items-center justify-center space-x-4">
-                    <Image
-                      src={PROPERTIES.githubImage}
-                      alt={PROPERTIES.githubAlt}
-                      height={25}
-                      width={25}
-                    />
-                    <a className="underline" href={PROPERTIES.githubURL} target="_blank">
-                      <CardDescription>
-                        {PROPERTIES.githubTitle}
-                      </CardDescription>
-                    </a>
-                  </div>
-                  <div className="flex items-center justify-center space-x-4">
-                    <Image
-                      src={PROPERTIES.linkedinImage}
-                      alt={PROPERTIES.linkedinAlt}
-                      height={25}
-                      width={25}
-                    />
-                    <a className="underline" href={PROPERTIES.linkedinURL} target="_blank">
-                      <CardDescription>
-                        {PROPERTIES.linkedinTitle}
-                      </CardDescription>
-                    </a>
-                  </div>
-                  <div className="flex items-center justify-center space-x-4">
-                    <Image
-                      src={PROPERTIES.gmailImage}
-                      alt={PROPERTIES.gmailAlt}
-                      height={25}
-                      width={25}
-                    />
-                    <a className="underline" href={PROPERTIES.gmailURL} target="_blank">
-                      <CardDescription>{PROPERTIES.gmailTitle}</CardDescription>
-                    </a>
+                <CardContent>
+                  <div className="flex flex-col justify-center items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
+                    <div className="flex items-center space-x-4">
+                      <Image
+                        src={PROPERTIES.githubImage}
+                        alt={PROPERTIES.githubAlt}
+                        height={25}
+                        width={25}
+                      />
+                     <a href={PROPERTIES.githubURL} target="_blank">
+                      <Button variant="outline">
+                          {PROPERTIES.githubTitle}
+                      </Button>
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <Image
+                        src={PROPERTIES.linkedinImage}
+                        alt={PROPERTIES.linkedinAlt}
+                        height={25}
+                        width={25}
+                      />
+                       <a href={PROPERTIES.linkedinURL} target="_blank">
+                      <Button variant="outline">
+                          {PROPERTIES.linkedinTitle}
+                      </Button>
+                      </a>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <Image
+                        src={PROPERTIES.gmailImage}
+                        alt={PROPERTIES.gmailAlt}
+                        height={25}
+                        width={25}
+                      />
+                       <a href={PROPERTIES.gmailURL} target="_blank">
+                      <Button variant="outline">
+                          {PROPERTIES.gmailTitle}
+                      </Button>
+                      </a>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -311,7 +312,7 @@ export default function Portfolio() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
