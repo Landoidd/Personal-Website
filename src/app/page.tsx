@@ -8,13 +8,7 @@ import { useTheme } from "../app/hooks/use-theme";
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { SectionHeader } from "@/components/Section-Header";
 import { ProjectCard } from "@/components/Project-Card";
@@ -273,10 +267,10 @@ export default function Portfolio() {
                         height={25}
                         width={25}
                       />
-                     <a href={PROPERTIES.githubURL} target="_blank">
-                      <Button variant="outline">
+                      <a href={PROPERTIES.githubURL} target="_blank">
+                        <Button variant="outline">
                           {PROPERTIES.githubTitle}
-                      </Button>
+                        </Button>
                       </a>
                     </div>
                     <div className="flex items-center space-x-4">
@@ -286,10 +280,10 @@ export default function Portfolio() {
                         height={25}
                         width={25}
                       />
-                       <a href={PROPERTIES.linkedinURL} target="_blank">
-                      <Button variant="outline">
+                      <a href={PROPERTIES.linkedinURL} target="_blank">
+                        <Button variant="outline">
                           {PROPERTIES.linkedinTitle}
-                      </Button>
+                        </Button>
                       </a>
                     </div>
                     <div className="flex items-center space-x-4">
@@ -299,10 +293,10 @@ export default function Portfolio() {
                         height={25}
                         width={25}
                       />
-                       <a href={PROPERTIES.gmailURL} target="_blank">
-                      <Button variant="outline">
+                      <a href={PROPERTIES.gmailURL} target="_blank">
+                        <Button variant="outline">
                           {PROPERTIES.gmailTitle}
-                      </Button>
+                        </Button>
                       </a>
                     </div>
                   </div>
@@ -312,7 +306,7 @@ export default function Portfolio() {
           </div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

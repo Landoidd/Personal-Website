@@ -1,6 +1,6 @@
-interface SectionHeaderProps {
-    title: string
-    description?: string
+type SectionHeaderProps = {
+    title: string;
+    description?: string;
   }
   
   export function SectionHeader({ title, description }: SectionHeaderProps) {
