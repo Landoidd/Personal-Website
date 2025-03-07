@@ -1,6 +1,6 @@
 interface SectionHeaderProps {
     title: string
-    description: string
+    description?: string
   }
   
   export function SectionHeader({ title, description }: SectionHeaderProps) {

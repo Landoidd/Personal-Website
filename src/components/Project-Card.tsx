@@ -1,21 +1,27 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Image from 'next/image'
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 type ProjectCardProps = {
   title: string;
   description: string;
-  imageSrc: string;
   technologies: string[];
-}
+  status: string;
+  githubLink?: string;
+};
 
-export function ProjectCard({ title, description, technologies, imageSrc }: ProjectCardProps) {
+export function ProjectCard({
+  title,
+  description,
+  technologies,
+  status,
+  githubLink,
+}: ProjectCardProps) {
+  let canClick = false;
+  if (status == "Github") canClick = true;
   return (
-    <Card className="overflow-hidden">
+    <Card className="overflow-hidden md:w-1/3">
       <CardHeader className={"flex justify-between items-center"}>
         <CardTitle>{title}</CardTitle>
-        <Image src={imageSrc} alt={title} width={50} height={50} color=""/>
       </CardHeader>
       <CardContent>
         <p className="text-sm text-muted-foreground">{description}</p>
@@ -25,12 +31,19 @@ export function ProjectCard({ title, description, technologies, imageSrc }: Proj
           ))}
         </div>
         <div className="mt-4 flex gap-2 justify-center">
-          <Button variant="outline" size="sm" asChild>
-            <p>Coming Soon</p>
-          </Button>
+          {canClick ? (
+            <Button variant="outline" size="sm" asChild>
+              <a href={githubLink} target="_blank">
+                <p>{status}</p>
+              </a>
+            </Button>
+          ) : (
+            <Button variant="outline" size="sm" asChild>
+              <p>{status}</p>
+            </Button>
+          )}
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
-

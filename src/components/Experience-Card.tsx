@@ -29,12 +29,12 @@ import {
     return (
       <Card>
         <CardHeader>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col justify-start items-start md:flex-row md:items-center md:justify-between">
             <div className="flex items-center space-x-4">
-              <CardTitle>{title}</CardTitle>
+              <CardTitle className="text-primary">{title}</CardTitle>
               <Image className={"relative rounded-full overflow-hidden border-2 border-primary"} src={imageSrc} alt={"Image of company logo"} width={60} height={60} />
             </div>
-            <Badge>{date}</Badge>
+            <Badge className="text-center">{date}</Badge>
           </div>
           <CardDescription>{company}</CardDescription>
           <div className="flex items-center space-x-2">

@@ -29,6 +29,7 @@ export default function Portfolio() {
   const skillsRef = useRef<HTMLElement>(null);
   const projectsRef = useRef<HTMLElement>(null);
   const connectRef = useRef<HTMLElement>(null);
+  const homeRef = useRef<HTMLElement>(null);
   const [mounted, setMounted] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
@@ -42,13 +43,20 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-background">
+      <section ref={homeRef}/>
       <header className="sticky top-0 z-50 w-full border-b bg-background/100 backdrop-blur">
         <div className="container flex h-16 items-center">
           <div className="mr-4 hidden md:flex">
-            <Link href="/" className="mr-6 flex items-center space-x-2">
+            {/* <Link href="/" className="mr-6 flex items-center space-x-2">
               <span className="font-bold">Home</span>
-            </Link>
+            </Link> */}
             <nav className="flex items-center space-x-6 text-sm font-medium">
+              <button
+                onClick={() => scrollToSection(homeRef)}
+                className="transition-colors hover:text-foreground/80"
+              >
+                Home
+              </button>
               <button
                 onClick={() => scrollToSection(experienceRef)}
                 className="transition-colors hover:text-foreground/80"
@@ -123,7 +131,7 @@ export default function Portfolio() {
                     alt="Profile Picture"
                     fill={true}
                     style={{
-                      objectFit: 'cover',
+                      objectFit: "cover",
                     }}
                   />
                 </div>
@@ -135,20 +143,17 @@ export default function Portfolio() {
         {/* Experience Section */}
         <section
           ref={experienceRef}
-          className="w-full py-12 md:py-24 lg:py-32 bg-muted/50"
+          className="w-full py-12 md:py-24 lg:py-30 bg-muted/50"
         >
           <div className="container px-4 md:px-6">
-            <SectionHeader
-              title={"Work Experience"}
-              description="Companies I have worked for."
-            />
-            <div className="w-2/3 mx-auto flex flex-wrap items-center justify-center p-12">
+            <SectionHeader title={"Work Experience"} />
+            <div className="md:w-2/3 mx-auto flex flex-wrap gap-10 items-center justify-center mt-4 md:p-12">
               <ExperienceCard
                 imageSrc={"/images/precision_sports_tech_logo.jpg"}
                 title={"Software Engineer Intern"}
                 company={"Precision Sports Technology"}
                 location={"Galway, Ireland"}
-                date={"06/2024-08/2024"}
+                date={"06/24-08/24"}
                 bulletPoints={[
                   PROPERTIES.PrecisionDesc,
                   PROPERTIES.Precision2Desc,
@@ -159,7 +164,7 @@ export default function Portfolio() {
                 title={"Software Engineer Intern"}
                 company={"Apparel Magic"}
                 location={"West Palm Beach, Florida"}
-                date={"05/2023-07/2023"}
+                date={"05/23-07/23"}
                 bulletPoints={[
                   PROPERTIES.ApparelDesc,
                   PROPERTIES.Apparel2Desc,
@@ -173,10 +178,7 @@ export default function Portfolio() {
         {/* Skills Section */}
         <section ref={skillsRef} className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <SectionHeader
-              title="Technical Skills"
-              description="Technologies and tools I specialize in."
-            />
+            <SectionHeader title="Technical Skills" />
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
               <SkillCard
                 title="Frontend"
@@ -202,23 +204,45 @@ export default function Portfolio() {
           ref={projectsRef}
           className="w-full py-12 md:py-24 lg:py-32 bg-muted/50"
         >
-          <div className="container px-4 md:px-6">
-            <SectionHeader
-              title="Projects"
-              description="Some of my recent work and personal projects."
-            />
-            <div className="flex flex-1 p-4 flex-wrap justify-center items-center md:width-2/3 md:p-20">
+          <div className="w-full container flex justify-center items-center flex-col px-4 md:px-6">
+            <SectionHeader title="Projects" />
+            <div className="flex flex-col justify-center lg:flex-row p-4 lg:justify-between gap-10 items-center">
               <ProjectCard
                 title="MyRewards"
                 description="A rewards app that supports local businesses"
-                imageSrc={PROPERTIES.myRewards}
                 technologies={[
                   "React Native",
                   "Expo",
                   "React",
-                  "AWS",
                   "Typescript",
+                  "Next.js",
+                  "AWS"
                 ]}
+                status="Coming soon"
+              />
+              <ProjectCard
+                title="MyPopManager"
+                description="A Gallery that displays images of collectibles"
+                technologies={[
+                  "Next.js",
+                  "React",
+                  "Tailwind",
+                  "Typescript",
+                  "Sentry",
+                  "Drizzle ORM"
+                ]}
+                status="Github"
+                githubLink="https://github.com/Landoidd/MyPopManager"
+              />
+              <ProjectCard
+                title="Pokemon Battle Simulator"
+                description="SFML game that uses two data structures to fetch stats and simulate a Pokemon battle"
+                technologies={[
+                  "C++",
+                  "SFML",
+                ]}
+                status="Github"
+                githubLink="https://github.com/Landoidd/MyPopManager"
               />
             </div>
           </div>
@@ -233,17 +257,17 @@ export default function Portfolio() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
                   Lets Connect
                 </h2>
               </div>
             </div>
-            <div className="mx-auto flex items-center justify-center p-12">
+            <div className="mx-auto flex items-start justify-center md:p-12">
               <Card className="w-full max-w-lg">
                 <CardHeader className="text-center">
                   <CardTitle>Contact Information</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-6 text-center">
+                <CardContent className="flex-col md:flex-row space-y-6 text-center">
                   <div className="flex items-center justify-center space-x-4">
                     <Image
                       src={PROPERTIES.githubImage}
@@ -251,7 +275,7 @@ export default function Portfolio() {
                       height={25}
                       width={25}
                     />
-                    <a className="underline" href={PROPERTIES.githubURL}>
+                    <a className="underline" href={PROPERTIES.githubURL} target="_blank">
                       <CardDescription>
                         {PROPERTIES.githubTitle}
                       </CardDescription>
@@ -264,7 +288,7 @@ export default function Portfolio() {
                       height={25}
                       width={25}
                     />
-                    <a className="underline" href={PROPERTIES.linkedinURL}>
+                    <a className="underline" href={PROPERTIES.linkedinURL} target="_blank">
                       <CardDescription>
                         {PROPERTIES.linkedinTitle}
                       </CardDescription>
@@ -277,7 +301,7 @@ export default function Portfolio() {
                       height={25}
                       width={25}
                     />
-                    <a className="underline" href={PROPERTIES.gmailURL}>
+                    <a className="underline" href={PROPERTIES.gmailURL} target="_blank">
                       <CardDescription>{PROPERTIES.gmailTitle}</CardDescription>
                     </a>
                   </div>
