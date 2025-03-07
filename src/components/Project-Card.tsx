@@ -33,12 +33,12 @@ export function ProjectCard({
         <div className="mt-4 flex gap-2 justify-center">
           {canClick ? (
             <a href={githubLink} target="_blank">
-              <Button variant="outline" size="sm" asChild>
+              <Button variant="outline" size="sm">
                 {status}
               </Button>
             </a>
           ) : (
-            <Button variant="outline" size="sm" asChild>
+            <Button variant="outline" size="sm">
               <p>{status}</p>
             </Button>
           )}
