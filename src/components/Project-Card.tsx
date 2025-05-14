@@ -19,12 +19,12 @@ export function ProjectCard({
   let canClick = false;
   if (status == "Github") canClick = true;
   return (
-    <Card className="overflow-hidden md:w-1/3">
+    <Card className="overflow-hidden">
       <CardHeader className={"flex justify-between items-center"}>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className="text-center">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-muted-foreground">{description}</p>
+        <p className="text-sm text-muted-foreground text-center">{description}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {technologies.map((task, index) => (
             <Badge key={index}>{task}</Badge>

@@ -39,12 +39,10 @@ export default function Portfolio() {
     <div className="min-h-screen bg-background">
       <section ref={homeRef} />
       <header className="sticky top-0 z-50 w-full border-b bg-background/100 backdrop-blur">
-        <div className="container flex h-16 items-center">
+        <div className="container flex h-16 items-center justify-between">
           <div className="mr-4 hidden md:flex">
-            {/* <Link href="/" className="mr-6 flex items-center space-x-2">
-              <span className="font-bold">Home</span>
-            </Link> */}
-            <nav className="flex items-center space-x-6 text-sm font-medium">
+            {/*Desktop navbar*/}
+            <nav className="hidden md:flex space-x-6 text-sm font-medium">
               <button
                 onClick={() => scrollToSection(homeRef)}
                 className="transition-colors hover:text-foreground/80"
@@ -178,6 +176,8 @@ export default function Portfolio() {
                 title="Frontend"
                 skills={[
                   "React",
+                  "React Native",
+                  "Expo",
                   "Next.js",
                   "TypeScript",
                   "Tailwind CSS",
@@ -203,37 +203,17 @@ export default function Portfolio() {
             <div className="flex flex-col justify-center lg:flex-row p-4 lg:justify-between gap-10 items-center">
               <ProjectCard
                 title="MyRewards"
-                description="A rewards app that supports local businesses"
+                description="A rewards platform that supports local businesses"
                 technologies={[
                   "React Native",
                   "Expo",
                   "React",
                   "Typescript",
-                  "Next.js",
-                  "AWS",
+                  "AWS CDK",
+                  "AWS SDK",
                 ]}
                 status="Coming soon"
-              />
-              <ProjectCard
-                title="MyPopManager"
-                description="A Gallery that displays images of collectibles"
-                technologies={[
-                  "Next.js",
-                  "React",
-                  "Tailwind",
-                  "Typescript",
-                  "Sentry",
-                  "Drizzle ORM",
-                ]}
-                status="Github"
-                githubLink="https://github.com/Landoidd/MyPopManager"
-              />
-              <ProjectCard
-                title="Pokemon Battle Simulator"
-                description="SFML game that uses two data structures to fetch stats and simulate a Pokemon battle"
-                technologies={["C++", "SFML"]}
-                status="Github"
-                githubLink="https://github.com/Landoidd/MyPopManager"
+                githubLink="MyRewards"
               />
             </div>
           </div>
