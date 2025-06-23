@@ -202,7 +202,7 @@ export default function Portfolio() {
             <SectionHeader title="Projects" />
             <div className="flex flex-col justify-center lg:flex-row p-4 lg:justify-between gap-10 items-center">
               <ProjectCard
-                title="MyRewards"
+                title="SparkRewards"
                 description="A rewards platform that supports local businesses"
                 technologies={[
                   "React Native",
@@ -213,7 +213,7 @@ export default function Portfolio() {
                   "AWS SDK",
                 ]}
                 status="Coming soon"
-                githubLink="MyRewards"
+                githubLink="SparkRewards"
               />
             </div>
           </div>
